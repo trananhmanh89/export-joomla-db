@@ -83,7 +83,7 @@ function backup_tables()
 	$file = 'db-backup-' . time() . '-' . (md5(implode(',', $tables))) . '.sql';
 	if (File::write(JPATH_ROOT . '/' . $file, $return)) {
 		echo '<div>success</div>';
-		echo '<div><a href="' . Uri::root() . $file.'">download</a></div>';
+		echo '<div><a href="' . Uri::root() . $file.'">'.$file.'</a></div>';
 	} else {
 		echo 'export error';
 	}
