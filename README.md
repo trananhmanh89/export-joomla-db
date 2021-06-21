@@ -1,4 +1,4 @@
-# export-joomla-db
+# Export Joomla Db Simple version
 Export joomla database
 
 Using for export database from joomla. Use query string `tbl` to export specific tables.
